@@ -6,7 +6,7 @@
     </div> 
 </div>
 <div class="messages" id="messages">
-  <%# <%= render partial: 'message', collection: @messages %> %>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 <%= form_with model: [@room, @message], class: 'form' do |f| %>
   <div class="form-input">
