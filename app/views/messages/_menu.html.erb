@@ -17,7 +17,8 @@
     <div class="menu-name">
       <a href="#">病院</a>
     </div>
-      <div class="menu-name">
+    <% if user_signed_in?%>
+    <div class="menu-name">
       <%= link_to 'ログアウト', "#", class: "logout" %>
     </div>
     <div class="menu-name">
@@ -26,5 +27,6 @@
     <div class="menu-name">
       <%= link_to '新規登録', "#" %>
     </div>
+    <% end %>
   </div>
 </div>
